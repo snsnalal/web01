@@ -5,6 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Seongho's Site</title>
+    <style>
+        h1
+        {
+            color:red;
+            background-color: rgba(0, 170, 161, 0.5);
+            font-family:"맑은 고딕", Arial, Helvetica, sans-serif;
+        }   
+        /*
+        medium = 16px = 1em = 100% = 12pt(인쇄용)
+        */
+        header h1
+        {
+            font-size: x-large;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+        ul
+        {
+            list-style-type: none;
+        }
+        nav ul
+        {
+            text-align: center;
+            border-top: 2px solid indianred;
+            border-bottom: 2px solid indianred;
+            padding: 15px 0px
+        }
+        nav ul li
+        {
+            display: inline;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            padding: 15px 25px;
+        }
+        nav ul li:hover
+        {
+            background-color: indianred;
+        }
+        nav ul a:hover
+        {
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -91,6 +136,13 @@
             <a href="http://google.com">Google</a><br>
             <a href="start.html">연습문서</a><br>
             <a href="#Profile">프로파일로 이동</a>
+        </div>
+        <div id="login">
+            <form action="#" method="POST">
+                아이디 : <input type="text" name="id"><br>
+                비밀번호 : <input type="password" name="pw"><br>
+                <input type="submit" value="login"><input type="reset" value="cansel">
+            </form>
         </div>
     </section>
     <footer>
